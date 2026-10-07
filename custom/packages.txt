@@ -1,0 +1,38 @@
+# 你最终保留的功能。脚本会自动检查当前源码是否存在对应包，存在才加入构建。
+# 核心/界面
+luci-app-ttyd
+luci-app-wol
+luci-app-upnp
+luci-theme-argon
+luci-app-argon-config
+luci-app-dockerman
+docker
+dockerd
+# WireGuard
+luci-proto-wireguard
+wireguard-tools
+kmod-wireguard
+# 分流/负载/流量
+mwan3
+luci-app-mwan3
+luci-app-nlbwmon
+# 文件共享/挂载（统一文件共享核心由 iStoreOS 自带，不重复替换）
+samba4-server
+ksmbd-server
+ksmbd-tools
+cifs-utils
+kmod-fs-cifs
+block-mount
+# FTP / WebDAV 基础
+vsftpd
+# VerySync / 微力同步
+luci-app-verysync
+# 常用基础工具
+htop
+curl
+wget-ssl
+ethtool
+smartmontools
+# IPv6 / 网络基础
+odhcp6c
+odhcpd-ipv6only

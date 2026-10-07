@@ -1,0 +1,12 @@
+# 这些应用版本/包名经常随 iStoreOS 应用商店变化，不强行写死到 rootfs。
+# 优先通过刷机后的 iStoreOS 应用商店安装，避免第三方包导致整包编译失败。
+#
+# 易有云文件管理器
+# OpenList
+# Lucky
+# KMS 服务器（vlmcsd）
+# PassWall
+# AdGuard Home
+# 应用过滤
+# IP/MAC 绑定
+# 定时限速
