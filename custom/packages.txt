@@ -1,45 +1,46 @@
-# 你最终保留的功能；当前源码存在才加入固件
-# 终端 / 主题 / Docker
+# AX1800 Pro / iStoreOS custom package list
+# The script only enables a package when it actually exists in the current feeds.
+# Upstream iStoreOS already includes several of these in its AX1800 Pro full build.
+
+# Monitoring / terminal / basic management
 luci-app-ttyd
 luci-app-wol
 luci-app-upnp
+luci-app-autoreboot
+luci-app-ramfree
+luci-app-diskman
+
+# Appearance
 luci-theme-argon
 luci-app-argon-config
-luci-app-dockerman
-docker
+
+# Docker (installed, but not started by this workflow)
 dockerd
+luci-app-dockerman
 
 # WireGuard
-luci-proto-wireguard
-wireguard-tools
 kmod-wireguard
+wireguard-tools
+luci-proto-wireguard
 
-# 多拨 / 负载 / 流量统计
+# Routing / load balancing / traffic statistics
 mwan3
 luci-app-mwan3
+luci-app-mwan3helper
 luci-app-nlbwmon
 
-# 统一文件共享 / SMB 网络挂载
-samba4-server
-ksmbd-server
-ksmbd-tools
+# SMB/CIFS network mount
 cifs-utils
 kmod-fs-cifs
 block-mount
 
-# FTP
-vsftpd
-
-# 微力同步
+# VerySync
 luci-app-verysync
+verysync
 
-# 基础工具
-htop
+# Useful storage/network tools
+smartmontools
+ethtool
 curl
 wget-ssl
-ethtool
-smartmontools
-
-# IPv6 基础
-odhcp6c
-odhcpd-ipv6only
+htop
